@@ -5,6 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>제품목록</title>
     <link rel="stylesheet" href="./resources/css/common.css">
+
+    <style>
+        .filter{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+
+        .order > a{
+            font-size: 20px;
+        }
+
+        .order > a:nth-child(1){
+            font-weight: bold;
+        }
+
+        .amount > select{
+            font-size: 18px;
+        }
+
+        .amount > span{
+            font-size: 18px;
+        }
+
+        .prod-list{
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+
+        .card{
+            width: calc(100% / 4);
+            box-sizing: border-box;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #DCDCDC;
+            cursor: pointer;
+        }
+
+        .card:hover{
+            border: 2px solid #00BC70;
+        }
+
+        .card:hover img{
+            height: 105%;
+        }
+
+        .card-top > img{
+            height: 100%;
+            transition-duration: 0.4s;
+        }
+
+        .card-top{
+            display: flex;
+            height: 70%;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .card-bottom{
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 12px;
+        }
+
+        .page{
+            display: flex;
+            justify-content: center;
+        }
+
+        .page > a{
+            border: 1px solid #AAAAAA;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            font-weight: bold;
+        }
+
+        .page > a:hover{
+            border: 1px solid #00BC70;
+            color: #00BC70;
+        }
+
+        .page > a:nth-child(2){
+            background-color: #00BC70;
+            border-color: #00BC70;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -28,14 +122,223 @@
         </div>
 
         <div class="body">
-
+            <div class="filter">
+                <div class="order">
+                    <a href="">추천순</a>
+                    <a href="">가격순</a>
+                    <a href="">리뷰순</a>
+                </div>
+                <div class="amount">
+                    <select name="" id="">
+                        <option value="">20개</option>
+                        <option value="">40개</option>
+                        <option value="">60개</option>
+                    </select>
+                    <span>씩 보기</span>
+                </div>
+            </div>
+            <div class="prod-list">
+                <div class="card">
+                    <div class="card-top">
+                        <img src="./resources/images/skin.jpg" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <h4>알로에 스킨 로션</h4>
+                        <h2>23,000 원</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img src="./resources/images/skin.jpg" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <h4>알로에 스킨 로션</h4>
+                        <h2>23,000 원</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img src="./resources/images/skin.jpg" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <h4>알로에 스킨 로션</h4>
+                        <h2>23,000 원</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img src="./resources/images/skin.jpg" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <h4>알로에 스킨 로션</h4>
+                        <h2>23,000 원</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img src="./resources/images/skin.jpg" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <h4>알로에 스킨 로션</h4>
+                        <h2>23,000 원</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img src="./resources/images/skin.jpg" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <h4>알로에 스킨 로션</h4>
+                        <h2>23,000 원</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img src="./resources/images/skin.jpg" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <h4>알로에 스킨 로션</h4>
+                        <h2>23,000 원</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img src="./resources/images/skin.jpg" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <h4>알로에 스킨 로션</h4>
+                        <h2>23,000 원</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img src="./resources/images/skin.jpg" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <h4>알로에 스킨 로션</h4>
+                        <h2>23,000 원</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img src="./resources/images/skin.jpg" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <h4>알로에 스킨 로션</h4>
+                        <h2>23,000 원</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img src="./resources/images/skin.jpg" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <h4>알로에 스킨 로션</h4>
+                        <h2>23,000 원</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img src="./resources/images/skin.jpg" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <h4>알로에 스킨 로션</h4>
+                        <h2>23,000 원</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img src="./resources/images/skin.jpg" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <h4>알로에 스킨 로션</h4>
+                        <h2>23,000 원</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img src="./resources/images/skin.jpg" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <h4>알로에 스킨 로션</h4>
+                        <h2>23,000 원</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img src="./resources/images/skin.jpg" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <h4>알로에 스킨 로션</h4>
+                        <h2>23,000 원</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img src="./resources/images/skin.jpg" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <h4>알로에 스킨 로션</h4>
+                        <h2>23,000 원</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img src="./resources/images/skin.jpg" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <h4>알로에 스킨 로션</h4>
+                        <h2>23,000 원</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img src="./resources/images/skin.jpg" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <h4>알로에 스킨 로션</h4>
+                        <h2>23,000 원</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img src="./resources/images/skin.jpg" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <h4>알로에 스킨 로션</h4>
+                        <h2>23,000 원</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top">
+                        <img src="./resources/images/skin.jpg" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <h4>알로에 스킨 로션</h4>
+                        <h2>23,000 원</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="page">
+                <a href="">◀</a>
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="">6</a>
+                <a href="">7</a>
+                <a href="">8</a>
+                <a href="">9</a>
+                <a href="">10</a>
+                <a href="">▶</a>
+            </div>
         </div>
 
         <div class="footer">
             <div class="footer_box">
                 <div>
                     <h2 class="font_green">찬웅샵</h2>
-                    <hr>
                     <h4>대전광역시 서구 문정로 77, 로데오 타운 1층</h4>
                     <h4>대표전화: 010-7398-7332</h4>
                     <h4>이메일주소: akow283@gmail.com</h4>
